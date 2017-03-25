@@ -3,7 +3,7 @@
   <groupId>HelloSpring</groupId>
   <artifactId>HelloSpring</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <packaging>war:war</packaging>
+  <packaging>war</packaging>
 
   <dependencies>
         <dependency>
@@ -14,7 +14,6 @@
     </dependencies>
 
     <build>
-        <finalName>hellospring</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -23,6 +22,14 @@
                 <configuration>
                     <source>1.8</source>
                     <target>1.8</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>2.3</version>
+                <configuration>
+                    <warName>bird.war</warName>
                 </configuration>
             </plugin>
         </plugins>
