@@ -3,7 +3,7 @@
   <groupId>HelloSpring</groupId>
   <artifactId>HelloSpring</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <packaging>war</packaging>
+  <packaging>war:war</packaging>
 
   <dependencies>
         <dependency>
